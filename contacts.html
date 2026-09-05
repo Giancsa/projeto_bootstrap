@@ -96,29 +96,30 @@
             <form>
 
                 <div class="form-floating mb-3 mt-3">
-                    <input type="text" class="form-control" id="name" placeholder="Seu nome social" name="name">
+                    <input type="text" class="form-control" id="name" placeholder="Seu nome social" name="name" minlength="2" maxlength="10" required>
                     <label for="name">Nome:</label>
                 </div>
 
                 <div class="form-floating mb-3 mt-3">
-                    <input type="email" class="form-control" id="email" placeholder="Seu e-mail principal" name="email">
+                    <input type="email" class="form-control" id="email" placeholder="Seu e-mail principal" name="email" required>
                     <label for="email">E-mail:</label>
                 </div>
 
                 <div class="form-floating mb-3 mt-3">
                     <input type="text" class="form-control" id="subject" placeholder="Assunto do contato"
-                        name="subject">
+                        name="subject" required>
                     <label for="subject">Assunto:</label>
                 </div>
 
                 <div class="form-floating">
                     <textarea class="form-control" id="message" name="message"
-                        placeholder="Digite a mensagem"></textarea>
+                        placeholder="Digite a mensagem" style="height: 8rem" required></textarea>
                     <label for="message">Mensagem:</label>
                 </div>
-<div class="mt-3">
-                <button type="submit" class="btn btn-primary">Enviar</button>
-</div>
+
+                <div class="mt-3">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
             </form>
 
 
